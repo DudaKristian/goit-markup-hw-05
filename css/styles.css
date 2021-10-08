@@ -88,6 +88,9 @@ header {
   line-height: 1.14;
   letter-spacing: 0.02em;
   margin-bottom: 0;
+  transition-property: fill, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .navigation :focus,
 .navigation :hover,
@@ -164,6 +167,9 @@ header {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button:focus,
@@ -261,11 +267,15 @@ header {
 }
 .link-list-item {
   display: block;
+  border-radius: 50%;
   height: 44px;
   width: 44px;
   margin-top: 16px;
   margin-bottom: 30px;
   fill: var(--logo-color);
+  transition-property: background-color, fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-icon {
@@ -274,7 +284,6 @@ header {
 .link-list-item:hover,
 .link-list-item:focus {
   background-color: var(--accent-color);
-  border-radius: 50%;
   fill: #fff;
   cursor: pointer;
 }
@@ -305,14 +314,19 @@ header {
   display: block;
   padding: 16px 32px;
   fill: var(--logo-color);
+  transition-property: border, fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* Portfolio buttons */
 .filter {
   color: var(--title-color);
-  /* background-color: var(--background-color); */
   display: flex;
   justify-content: center;
   padding-bottom: 50px;
+  transition-property: background-color, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .filter > li {
   margin-right: 8px;
@@ -364,6 +378,9 @@ header {
   /* margin-right: 30px; */
   margin-bottom: 30px;
   min-width: 370px;
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .card-list-item:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
@@ -437,6 +454,9 @@ header {
   border-radius: 50%;
   padding: 12px;
   margin-right: 10px;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-icon {
   fill: var(--accent-white);
