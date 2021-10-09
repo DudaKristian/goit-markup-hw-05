@@ -419,11 +419,14 @@ a.current::after {
   border: 1px solid #eeeeee;
   margin-bottom: 30px;
   min-width: 370px;
-  position: relative;
-  overflow: hidden;
+
   transition-property: box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.overflow {
+  position: relative;
+  overflow: hidden;
 }
 .overlay {
   position: absolute;
