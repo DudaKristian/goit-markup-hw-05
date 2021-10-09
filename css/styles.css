@@ -101,10 +101,26 @@ header {
   color: var(--accent-color);
   fill: var(--accent-color);
 }
+.position {
+  position: relative;
+}
+a.current::after {
+  content: '';
+  height: 4px;
+  width: 48px;
+  background-color: var(--accent-color);
+  border-radius: 2px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  top: 48px;
+  z-index: 2;
+}
 .navigation a.current {
   color: var(--accent-color);
   fill: var(--accent-color);
 }
+
 .navigation > li,
 .contacts > li {
   padding: 0;
