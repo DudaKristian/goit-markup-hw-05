@@ -219,7 +219,7 @@ a.current::after {
   background-color: rgba(0, 0, 0, 0.2);
   z-index: 1;
   opacity: 1;
-  transition-property: opacity;
+  transition-property: opacity, visibility;
   transition-duration: 250ms;
   transition-timing-function: linear;
 }
@@ -227,7 +227,7 @@ a.current::after {
 .is-hidden {
   visibility: hidden;
   opacity: 0;
-  /* pointer-events: none; */
+  pointer-events: none;
 }
 
 .modal {
