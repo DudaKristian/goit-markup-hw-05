@@ -165,7 +165,7 @@ a.current::after {
 /* HERO */
 .hero {
   margin-top: 0;
-  width: 1600px;
+  max-width: 1600px;
   height: 600px;
   padding: 200px 0;
   background-color: var(--hero-background-color);
