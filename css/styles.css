@@ -118,7 +118,6 @@ a.current::after {
   left: 50%;
   transform: translate(-50%);
   top: 48px;
-  z-index: 2;
 }
 .navigation a.current {
   color: var(--accent-color);
@@ -156,9 +155,6 @@ a.current::after {
   margin-bottom: 0;
   margin-left: auto;
 }
-.contacts-item a use {
-}
-
 .icon-header {
   width: 16px;
   height: 12px;
@@ -208,6 +204,7 @@ a.current::after {
 
 .button:focus,
 .button:hover {
+  cursor: pointer;
   background-color: #188ce8;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -221,14 +218,16 @@ a.current::after {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
   z-index: 1;
+  opacity: 1;
   transition-property: opacity;
-  transition-duration: 500ms;
+  transition-duration: 250ms;
   transition-timing-function: linear;
 }
 
 .is-hidden {
   visibility: hidden;
   opacity: 0;
+  /* pointer-events: none; */
 }
 
 .modal {
@@ -250,12 +249,17 @@ a.current::after {
   right: 8px;
   border-radius: 50%;
   background-color: #fff;
-  background-image: url(../images/close.svg);
   width: 30px;
   height: 30px;
-  background-repeat: no-repeat;
-  background-position: center;
   border: 1px solid rgba(0, 0, 0, 0.1);
+  fill: var(--logo-secondary-color);
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: linear;
+}
+.modal-close:hover {
+  cursor: pointer;
+  fill: var(--accent-color);
 }
 /* Advantages */
 .advantage-title {
