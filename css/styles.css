@@ -141,12 +141,22 @@ a.current::after {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  transition-property: fill, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.contacts svg use {
+  transition-property: fill, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contacts {
   display: flex;
   margin-top: 0;
   margin-bottom: 0;
   margin-left: auto;
+}
+.contacts-item a use {
 }
 
 .icon-header {
