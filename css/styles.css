@@ -165,11 +165,13 @@ a.current::after {
 /* HERO */
 .hero {
   margin-top: 0;
-  max-width: 1600px;
+  width: 1600px;
   height: 600px;
   padding: 200px 0;
   background-color: var(--hero-background-color);
   background-image: url(../images/hero-bgi.jpg);
+  margin-left: auto;
+  margin-right: auto;
 }
 .hero-title {
   color: var(--accent-white);
