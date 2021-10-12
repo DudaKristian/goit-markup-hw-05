@@ -405,6 +405,7 @@ a.current::after {
 .clients-list {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 0;
 }
 .client-link:hover,
 .client-link:focus {
